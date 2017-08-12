@@ -1,24 +1,22 @@
-<header>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- making sure that nav-bar collapse works --> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- import Lobster font from google fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Lobster&effect=font-effect-outline' rel='stylesheet'   type='text/css'>
-  <!-- import Athiti font from google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
-  <!-- importing font awesome icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- linking bootstrap to index.html-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> 
-  <!-- linking js and css files to index.html --> 
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script type="text/javascript" src="js/script.js"></script>
-</header>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- linking bootstrap to index.html-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> 
+   <!-- import Athiti font from google fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
+   <!-- importing font awesome icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- linking style.css to index.html --> 
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- making sure that nav-bar collapse works --> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <!-- linking script.css to index.html -->
+   <script type="text/javascript" src="js/script.js"></script>
+</head>
 
 <!-- The scrollable area -->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
 <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
@@ -48,25 +46,25 @@
     <div id="overlay">
       <div class="title">
         <h1><strong> CHRIS JIM </strong></h1>
-        <h3><strong> IOS DEVELOPER | FRONT-END WEB DEVELOPER </strong></h3>
+        <h3 id="jobPosition"><strong> IOS DEVELOPER | FRONT-END WEB DEVELOPER </strong></h3>
       </div>
       <div class="row text-center">
-        <div class="border contact"><a href="#contact" class="scroll"><h2 style="color: white;"><strong> Contact </strong></h2></a></div>
-        <div class="border CV"><h2 style="color: white;"><a href="https://drive.google.com/file/d/0ByZ5dmmIdSHeZHVLQ09VY2tfV3M/view" target="_blank"><strong> CV </strong></a></h2></div>
+        <div class="border contact"><a href="#contact" class="scroll"><h2 style="color: white;" id="borderText"><strong> Contact </strong></h2></a></div>
+        <div class="border CV"><h2 style="color: white;" id="borderText"><a href="https://drive.google.com/file/d/0ByZ5dmmIdSHeT0xtQi1nanVWcDg/view" target="_blank"><strong> CV </strong></a></h2></div>
       </div>
     </div>
   </section>
   
+<!-- self-introduction --> 
 <div class="self-intro">
-  <p id="self-intro" style="padding-top: 80px;"><strong> I fell in love with programming when I was 17 and have been self-learning ever since.</strong></p>
+  <p id="self-intro" style="padding-bottom:10px"><strong> I fell in love with programming when I was 17 and have been self-learning ever since.</strong></p>
   <p id="self-intro"> Swarms of new technology have and will continue to revolutionize our fundamental way of living. I see myself spearheading projects that will take us a step further in effectively deciphering the mysteries of our complex planet. </p>
 </div>
 
-
 <!-- Section 2 --> 
   <section class="pageTwo" id="about">
-    <div class="text-center techSkills border">
-      <h1 style="color:black; top:20px;"><strong> Technical Skills </strong></h1>  
+    <div class="text-center pageTitles border">
+      <h1 style="color:black; top:20px;" id="pageTitle"><strong> TECHNICAL SKILLS </strong></h1>  
     </div> 
     <h2 class="text-center" id="pageTwoLabel"><strong> Languages: </strong></h2> 
     <div class="row text-center" style="font-size:2.0em;">
@@ -108,31 +106,50 @@
   </section>
 
 <!-- Section 3 --> 
-  <section class="pageThree" id="experience"> 
-    <h1 class="text-center" style="color:black;"> My Experience </h1> 
-      <div style="position:relative; top:5%; left:10%;"> 
-        <a class="btn btn-free-code-camp btn-lg" href="https://www.freecodecamp.com/chrisjim316" target="_blank" title="freeCodeCamp"><i class="fa fa-5x fa-free-code-camp"></i></a>
-        <h2>Freelance Web Developer 2017-Present</h2>
-        <a class="btn btn-github btn-lg" href="https://github.com/chrisjim316" target="_blank" title="GitHub"><i class="fa fa-5x fa-github"></i></a>
-        <h2>Open Source Developer 2017-Present</h2>
-        <img src="https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/BigNerdRanchLogo.jpeg?raw=true" alt="BigNerdRanch" id="bigNerdRanch"></a>
-        <h2>iOS Developer 2017-Present</h2>
-      </div>
+  <section class="pageThree" id="experience" style="color:black;"> 
+    <h1 class="text-center border pageTitles" style="color:black; margin-bottom: 3%;" id="pageTitle"> EXPERIENCE </h1> 
+    <div class="work-timeline">
+      <ul class="timeline">
+        <li class="timeline-event">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail"> 2017 - Present </p>
+            <h5 id="workplace"><a href="https://www.freecodecamp.org/chrisjim316" target="_blank">FREECODECAMP</a></h5>
+            <h5 id="jobPos"> Freelance Web Developer </h5>
+            <p id="jobDesc">
+              Built multiple responsive web applications and earned the Front-End Development Certification (477 Hours Challenge)
+            </p>
+          </div>
+        </li>
+      </ul>
+      <ul class="timeline">
+        <li class="timeline-event">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">March 2016 - July 2017 </p>
+            <h5 id="workplace"><a href="http://www.tact.com.tw/" target="_blank">TAIWAN TACT EDUCATION CO.,LTD.</a></h5>
+            <h5 id="jobPos"> English Language/IELTS Tutor </h5>
+            <p id="jobDesc"> Taught English and IELTS to junior-high and senior-high school students </p>
+            <p id="jobDesc"> Successfully raised senior students' IELTS scores by an average of 1.0 - 1.5 band scale on an overall scale of 9.0 </p>
+          </div>
+        </li>
+      </ul>
+    </div>  
   </section>
   
 <!-- Section 4 Project Showcase -->   
   <section class="pageFour" id="portfolio">
-    <h1 class="text-center"> Portfolio </h1>
-    <h3 class="text-center"> Click on each project's title for more info* </h3>
+    <h1 class="text-center border pageTitles" style="border-color: white; margin-bottom: 20px;" id="pageTitle"> PORTFOLIO </h1>
     <div class="container">
 
       <!-- first row -->
        <div class="row">
         <div class="col-md-6">
           <div class="well">
-            <a class="thumbnail" href="https://github.com/chrisjim316/WorldTrotter-" target="_blank">
+            <a class="thumbnail">
                <img src="https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/TransWorldTrotter.png?raw=true" alt="worldTrotter" class="project-img" style:"width:50%;height:50%;"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#worldTrotter"><strong>WORLDTROTTER</strong></h2>
+            <h2 id="projectTitle"><strong>WORLDTROTTER</strong></h2>
+            <a href="https://github.com/chrisjim316/WorldTrotter" target="_blank" alt="Source Code"><h2 style="display:block;"id="sourceCode"><strong>Source Code</strong></h2></a>
             <div id="worldTrotter" class="collapse projectDescription">
               <ul>
                 <li> Incorporated various types of world map, conversion between degrees Fahrenheit and degrees Celsius, and a web view. </li>
@@ -140,16 +157,19 @@
               </ul>
               <p><strong>Technologies used:</strong> Swift, XCode, UIKit</p>
             </div>
+            <div class="view" id="viewMore1" data-toggle="collapse" data-target="#worldTrotter"><h4> Show Details </h4></div>
+            <div class="view" id="showLess1" data-toggle="collapse" data-target="#worldTrotter"><h4> Hide Details </h4></div>
           </div>
         </div>   
         <div class="col-md-6">
           <div class="well">
-            <a class="thumbnail" href="https://github.com/chrisjim316/ThirteensCardGame" target="_blank">
+            <a class="thumbnail">
               <img src="https://user-images.githubusercontent.com/26378494/28245907-7cec9b8c-6a43-11e7-9b90-babb87221a83.gif" alt="cardGame-demo" class="project-img"> 
               <img src="https://user-images.githubusercontent.com/26378494/28245913-80f66320-6a43-11e7-871d-882421d52e7c.gif" alt="cardGame-win" class="project-img">
               <img src="https://user-images.githubusercontent.com/26378494/28245909-7f28beee-6a43-11e7-8596-313a64bc82d2.JPG" alt="cardGame-lose" class="project-img">
             </a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#cardGame"><strong>SOLITAIRE CARD GAME</strong></h2>
+            <h2 id="projectTitle"><strong>SOLITAIRE CARD GAME</strong></h2>
+            <a href="https://github.com/chrisjim316/ThirteensCardGame" target="_blank" alt="Source Code"><h2 id="sourceCode" style="display:block;"><strong>Source Code</strong></h2></a>
             <!-- collapsible projectDescription -->
             <div id="cardGame" class="collapse projectDescription">
               <ul>
@@ -162,6 +182,8 @@
               </ul>
               <p><strong>Technologies used:</strong> Java, BlueJ, JFrame, ActionListener</p>
             </div>
+            <div class="view" id="viewMore2" data-toggle="collapse" data-target="#cardGame"><h4> Show Details </h4></div>
+            <div class="view" id="showLess2" data-toggle="collapse" data-target="#cardGame"><h4> Hide Details </h4></div>
           </div>
         </div>
       </div>
@@ -170,9 +192,11 @@
       <div class="row">
         <div class="col-md-6">
           <div class="well">
-            <a href="https://codepen.io/liljimbos/full/JydZJX/" class="thumbnail" target="_blank">
+            <a class="thumbnail">
               <img src="https://github.com/iam-chrisjim/Images/blob/master/RandomQuote/thumbnail.JPG?raw=true" alt="Random Quote Generator" class="project-img"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#random"><strong>RANDOM QUOTE GENERATOR</strong></button></h2>
+            <h2 id="projectTitle"><strong>RANDOM QUOTE GENERATOR</strong></button></h2>
+            <a href="https://codepen.io/liljimbos/full/JydZJX/" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Live Demo</strong></h2></a>
+            <a href="https://codepen.io/liljimbos/pen/JydZJX" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>Source Code</strong></h2></a>
             <!-- collapsible projectDescription -->
             <div id="random" class="collapse projectDescription">
               <ul>
@@ -182,13 +206,17 @@
               </ul> 
               <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript, jQuery, Bootstrap</p>
             </div>
+            <div class="view" id="viewMore3" data-toggle="collapse" data-target="#random"><h4> Show Details </h4></div>
+            <div class="view" id="showLess3" data-toggle="collapse" data-target="#random"><h4> Hide Details </h4></div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="well">
-            <a href="https://codepen.io/liljimbos/full/dzbJqR/" class="thumbnail" target="_blank">
+            <a class="thumbnail">
               <img src="https://github.com/chrisjim316/Local-Weather-App-/blob/master/Images/NEWthumbnail.JPG?raw=true" alt="Local Weather App" class="project-img"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#weather"><strong>LOCAL WEATHER APP</strong></h2>
+            <h2 id="projectTitle"><strong>LOCAL WEATHER APP</strong></h2>
+            <a href="https://codepen.io/liljimbos/full/dzbJqR/" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Live Demo</strong></h2></a>
+            <a href="https://codepen.io/liljimbos/pen/dzbJqR" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>Source Code</strong></h2></a>
             <!-- collapsible projectDescription -->
             <div id="weather" class="collapse projectDescription">
               <ul>
@@ -198,6 +226,8 @@
               </ul>
               <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript, jQuery, Bootstrap, Geolocation/Weather API</p> 
             </div>
+            <div class="view" id="viewMore4" data-toggle="collapse" data-target="#weather"><h4> Show Details </h4></div>
+            <div class="view" id="showLess4" data-toggle="collapse" data-target="#weather"><h4> Hide Details </h4></div>
           </div>
         </div>
       </div>
@@ -206,20 +236,26 @@
      <div class="row">
         <div class="col-md-6">
           <div class="well">
-            <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" class="thumbnail" target="_blank">
+            <a class="thumbnail">
               <img src="https://user-images.githubusercontent.com/30268174/28666035-58a64be8-72f8-11e7-995d-f38e10a342b1.png" alt="Twitchtv JSON API" class="project-img"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#twitchtv"><strong>Twitchtv JSON API</strong></button></h2>
+            <h2 id="projectTitle"><strong>Twitchtv JSON API</strong></button></h2>
+            <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Live Demo</strong></h2></a>
+            <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>Source Code</strong></h2></a>
             <!-- collapsible projectDescription -->
             <div id="twitchtv" class="collapse projectDescription">
               <p class="text-center"> Under Construction </p> 
             </div>
+            <div class="view" id="viewMore5" data-toggle="collapse" data-target="#twitchtv"><h4> Show Details </h4></div>
+            <div class="view" id="showLess5" data-toggle="collapse" data-target="#twitchtv"><h4> Hide Details </h4></div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="well">
-            <a href="https://codepen.io/liljimbos/full/GvogyR/" class="thumbnail" target="_blank">
+            <a class="thumbnail">
               <img src="https://raw.githubusercontent.com/chrisjim316/freeCodeCamp-/master/Assets/Images/Wikipedia%20Viewer/Images/thumbnail.JPG" alt="Wikipedia Searcher" class="project-img"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#wiki"><strong>Wikipedia Search</strong></h2>
+            <h2 id="projectTitle"><strong>Wikipedia Search</strong></h2>
+            <a href="https://codepen.io/liljimbos/full/GvogyR" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Live Demo</strong></h2></a>
+            <a href="https://codepen.io/liljimbos/pen/GvogyR" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>Source Code</strong></h2></a>
             <!-- collapsible projectDescription -->
             <div id="wiki" class="collapse projectDescription">
               <ul>
@@ -228,10 +264,52 @@
               </ul>
               <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript, jQuery, Bootstrap, MediaWiki API</p>   
             </div>
+            <div class="view" id="viewMore6" data-toggle="collapse" data-target="#wiki"><h4> Show Details </h4></div>
+            <div class="view" id="showLess6" data-toggle="collapse" data-target="#wiki"><h4> Hide Details </h4></div>
           </div>
         </div>
       </div>
     <!-- end of 3rd row -->
+    <!-- 4th row -->
+     <div class="row">
+        <div class="col-md-6">
+          <div class="well">
+            <a class="thumbnail">
+              <img src="https://github.com/iam-chrisjim/Images/blob/master/Tic%20Tae%20Toe/thumbnail.png?raw=true" alt="Tic Tac Toe" class="project-img"></a>
+            <h2 id="projectTitle"><strong>Tic Tae Toe</strong></button></h2>
+            <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Live Demo</strong></h2></a>
+            <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>Source Code</strong></h2></a>
+            <!-- collapsible projectDescription -->
+            <div id="ticTacToe" class="collapse projectDescription">
+              <p class="text-center"> Under Construction </p> 
+            </div>
+            <div class="view" id="viewMore7" data-toggle="collapse" data-target="#ticTacToe"><h4> Show Details </h4></div>
+            <div class="view" id="showLess7" data-toggle="collapse" data-target="#ticTacToe"><h4> Hide Details </h4></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="well">
+            <a class="thumbnail">
+              <img src="https://github.com/iam-chrisjim/Amazon-Book-Seller/blob/master/Images/titlePage.JPG?raw=true" alt="Amazon Book Seller" class="project-img">
+              <img src="https://github.com/iam-chrisjim/Amazon-Book-Seller/blob/master/Images/searchFilter2.gif?raw=true" alt="Amazon Book Seller" class="project-img"></a>
+            <h2 id="projectTitle"><strong>Amazon Book Seller</strong></h2>
+            <a href="http://iamchrisjim.com/Amazon-Book-Seller/" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Live Demo</strong></h2></a>
+            <a href="https://codepen.io/liljimbos/pen/JyEEVQ" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>Source Code</strong></h2></a>
+            <!-- collapsible projectDescription -->
+            <div id="AmazonBookSeller" class="collapse projectDescription">
+              <ul>
+                <li>Designed a responsive website to sell my books on Amazon. </li>
+                <li>Engineered a search filter that constantly updates search results base on book titles </li>
+                <li>Encompassed the price, condition, book title and details for over unique 50 books. </li>
+              </ul>
+              <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript, jQuery, Bootstrap, Amazon.com</p>   
+            </div>
+            <div class="view" id="viewMore8" data-toggle="collapse" data-target="#AmazonBookSeller"><h4> Show Details </h4></div>
+            <div class="view" id="showLess8" data-toggle="collapse" data-target="#AmazonBookSeller"><h4> Hide Details </h4></div>
+          </div>
+        </div>
+      </div>
+    <!-- end of 4th row -->
     </div>
   </section>
 
@@ -250,7 +328,7 @@
   
 <!-- The footer -->
   <footer>
-    <p>Copyright © Chris Jim 2017. All Rights Reserved</p>
+    <p id="footer">Copyright © Chris Jim 2017. All Rights Reserved</p>
     <p>
       <a href="mailto:chrisjim316@gmail.com"><i class="fa fa-envelope"></i></a>
       <a href="https://www.linkedin.com/in/chris-jim-77b090128/" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -260,4 +338,3 @@
     </p>
   </footer>
 </body>
-
